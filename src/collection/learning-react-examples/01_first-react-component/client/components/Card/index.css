@@ -1,0 +1,80 @@
+.card-container {
+	background-color: #fff;
+	border-radius: 6px;
+	overflow: hidden;
+	max-width: 300px;
+	margin: 100px auto;
+	box-shadow: 0 10px 40px -14px rgba(135, 144, 158, 0.6), 0 10px 40px -10px rgba(135, 144, 158, 0.6);
+}
+
+.card-header {
+	background-color: rgba(80, 103, 124, 0.73);
+	padding: 14px 18px;
+	font-size: 18px;
+}
+
+.card-header span {
+	display: inline-block;
+	border-radius: 50%;
+	background-color: #f7f7f7;
+	height: 40px;
+	width: 40px;
+	vertical-align: middle;
+	margin-right: 15px;
+	color: #959595;
+	font-size: inherit;
+	position: relative;
+}
+
+.card-header span:after {
+	content: attr(initials);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.card-header h2 {
+	display: inline-block;
+	font-weight: normal;
+	color: #fff;
+	font-size: inherit;
+	vertical-align: middle;
+	margin: 0;
+}
+
+.card-container main {
+	padding: 22px 10px;
+	overflow: hidden;
+}
+
+.card-container main ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	width: 100%;
+}
+
+.card-container main ul li {
+	margin: 0 0 11px;
+	color: #333;
+	float: left;
+	width: 100%;
+}
+
+.card-container main ul li .details-heading {
+	float: left;
+	width: 25%;
+}
+
+.card-container main ul li .details-heading::after {
+	float: right;
+	content: ':';
+}
+
+.card-container main ul li .details-content {
+	float: right;
+	text-align: left;
+	width: 70%;
+}

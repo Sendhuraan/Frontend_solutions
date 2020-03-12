@@ -1,0 +1,26 @@
+.App-header .header-links {
+	width: 385px;
+	margin: 40px auto 0;
+	overflow: hidden;
+	background: #414141;
+	padding: 9px 0px;
+}
+
+.App-header .header-links ul {
+	width: 100%;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.App-header .header-links ul li {
+	float: left;
+	list-style: none;
+	margin: 0 25px;
+	padding: 0;
+}
+
+.App-header .header-links ul li a {
+	color: #fff;
+	text-decoration: none;
+}

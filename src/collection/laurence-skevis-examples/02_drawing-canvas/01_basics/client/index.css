@@ -1,0 +1,12 @@
+html,
+body {
+	margin:0;
+	padding: 0;
+}
+
+#canvas {
+	/* Don't add width and height property here. Add as a property in canvas element.*/
+	border: 1px solid #ccc;
+	display: block;
+	margin: 25px auto 0;
+}

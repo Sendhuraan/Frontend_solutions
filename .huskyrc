@@ -1,0 +1,5 @@
+{
+  "hooks": {
+    "pre-commit": "gulp --dir _solution_templates/redux-observable"
+  }
+}

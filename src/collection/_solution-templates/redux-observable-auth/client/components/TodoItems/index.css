@@ -1,0 +1,54 @@
+.TodoItems {
+     background-color: #f5f5f5;
+     border-radius: 4px;
+     border: 1px solid #e3e3e3;
+     box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+     margin: 20px auto;
+     min-height: 20px;
+     padding: 20px;
+     text-align: left;
+     width: 70%;
+}
+
+.TodoItems ul {
+     margin: 20px 0px;
+     padding: 0;
+     list-style: none;
+}
+
+.TodoItems ul li {
+     background-color: #fff;
+     border: 1px solid #ddd;
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: -1px;
+     padding: 10px 15px;
+}
+
+.TodoItems ul li .hide {
+     visibility: hidden;
+}
+
+.TodoItems ul li.completed {
+     background-color: #dff0d8;
+}
+
+.TodoItems ul li .actions {
+     display: flex;
+     justify-content: space-between;
+     width: 40px;
+}
+
+.TodoItems ul li span {
+     cursor: pointer;
+}
+
+.TodoItems ul li .done {
+     color: #79c41d;
+     display: block;
+}
+
+.TodoItems ul li .trash {
+     color: #c41d1d;
+     display: block;
+}

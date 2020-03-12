@@ -1,0 +1,54 @@
+.pornstars-list {
+  text-align: left;
+
+  li {
+    position: relative;
+  }
+
+  span {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  em {
+    display: block;
+    font-size: 15px;
+    font-style: normal;
+  }
+
+  .trash {
+    position: absolute;
+    right: 05px;
+    top: 16px;
+    opacity: 0.3;
+    border: 0;
+    width: 15px;
+    height: 15px;
+    background: none;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:before, &:after {
+      position: absolute;
+      left: 0;
+      content: ' ';
+      height: 15px;
+      width: 2px;
+      background-color: #333;
+      top: 0;
+    }
+
+    &:before {
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+    }
+
+  }
+  
+  
+}

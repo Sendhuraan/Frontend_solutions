@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<title>Receiving Post Input | Node Cookbook Examples</title>
+	</head>
+	<body>
+ <div class='container' id='searchBtn'>
+	<a class='btn' href='#open-modal' id='search-artist-btn'>Search Artist</a>
+</div>
+<div class='container' id='modalBox'>
+	<div id='open-modal' class='modal-window'>
+		<div>
+			<a href='#' title='Close' class='modal-close' id='close-btn'>Close</a>
+			<form>
+				<div class='form-group'>
+					<lable>Name</lable>
+					<input typ='text' id='artistName' value='JACK' />
+				</div>
+				<div class='form-group'>
+					<lable>No.of Tracks</lable>
+					<input  id='tracks' typ='text' value='4' />
+				</div>
+				<button class='btn' type='button' id='search-btn'>Search</a>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class='container' id='tabSec'>
+	<ul class='nav nav-tabs' id='tabDisplay'></ul>
+	<div class='tab-content' id='tabDataDisplay'></div>
+</div>
+ 	<script type="text/javascript" src="bundle.js"></script></body>
+</html>

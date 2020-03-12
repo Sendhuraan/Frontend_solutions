@@ -1,0 +1,33 @@
+.person-form-container {
+  margin: 0 auto;
+}
+
+.person-form-container form input {
+  border: 1px solid #eee;
+  font-size: 16px;
+  height: 50px;
+  width: 300px;
+}
+
+.person-form-container form button {
+  background: #0072ff;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  height: 50px;
+  width: 300px;
+}
+
+.person-form-container .error {
+  border: 1px solid red;
+}
+
+.person-form-container .error-msg {
+  color: red;
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset;
+}

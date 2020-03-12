@@ -1,0 +1,40 @@
+.Summation {
+  padding: 30px;
+}
+
+.Summation input[type=number]::-webkit-inner-spin-button,
+.Summation input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.Summation input {
+  width: 500px;
+  height: 60px;
+  font-size: 20px;
+  outline: none;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.Summation ul {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  width: 522px;
+}
+
+.Summation ul li {
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding: 10px;
+}
+
+.Summation ul li:first-child {
+  border-top: none;
+}
+
+.Summation ul li:last-child {
+  border-bottom: 1px solid #ccc;
+}

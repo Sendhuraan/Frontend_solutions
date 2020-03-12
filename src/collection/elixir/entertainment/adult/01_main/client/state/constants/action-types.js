@@ -1,0 +1,2 @@
+export const ADD_PORNSTAR = 'ADD_PORNSTAR';
+export const DELETE_PORNSTAR = 'DELETE_PORNSTAR';
