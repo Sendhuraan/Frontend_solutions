@@ -80,6 +80,7 @@ module.exports = {
 		semi: ['error', 'always'],
 		quotes: ['error', 'single'],
 		'comma-dangle': ['error', 'never'],
+		'object-curly-spacing': ['error', 'always'],
 		'constructor-super': 'error',
 		'no-class-assign': 'error',
 		'no-confusing-arrow': 'error',

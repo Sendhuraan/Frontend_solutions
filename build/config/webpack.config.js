@@ -1,6 +1,7 @@
 (function() {
-	var MiniCssExtractPlugin = require('mini-css-extract-plugin');
-	var nodeExternals = require('webpack-node-externals');
+	const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+	const nodeExternals = require('webpack-node-externals');
+	const { VueLoaderPlugin } = require('vue-loader');
 
 	var transpileConfig = require('./babel.config.js');
 
@@ -119,6 +120,13 @@
 					exclude: /node_modules/
 				},
 				{
+					test: /\.(vue)$/,
+					use: {
+						loader: 'vue-loader'
+					},
+					exclude: /node_modules/
+				},
+				{
 					test: /\.(html)$/,
 					use: {
 						loader: 'html-loader'
@@ -130,10 +138,11 @@
 			new MiniCssExtractPlugin({
 				filename: 'css/[name].css',
 				chunkFilename: '[id].css'
-			})
+			}),
+			new VueLoaderPlugin()
 		],
 		resolve: {
-			extensions: ['.js', '.jsx', '.scss']
+			extensions: ['.js', '.jsx', '.vue', '.scss']
 		}
 	};
 
