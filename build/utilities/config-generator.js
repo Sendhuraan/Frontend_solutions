@@ -127,6 +127,7 @@
 					'^.+\\.(js|jsx)?$': jestTransformerPath
 				});
 				jestBrowserTestConfig.verbose = true;
+				jestBrowserTestConfig.watch = true;
 
 				BROWSER_TEST_OPTIONS = {
 					runner: BROWSER_TEST_RUNNER__PARAM,
@@ -299,7 +300,7 @@
 				  }
 				: false,
 			build:
-				!isCloudDeploy && (isNodeServer || isNodeDB || isNodeBundle)
+				!isCloudDeploy && (isNodeServer || isNodeDB)
 					? {
 							dirs: {
 								source: SOURCE_DIR ? SOURCE_DIR : false,

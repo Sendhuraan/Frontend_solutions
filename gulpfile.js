@@ -464,7 +464,7 @@
 	const lint = parallel(lintBrowserFiles);
 	const bundle = series(bundleBrowser);
 	const generateSolution = series(
-		lint,
+		// lint,
 		runBrowserTests,
 		cleanOutputDir,
 		bundle
@@ -496,7 +496,7 @@
 	exports.lintBrowserFiles = series(getConfig, lintBrowserFiles);
 	exports.runBrowserTests = series(
 		getConfig,
-		lintBrowserFiles,
+		// lintBrowserFiles,
 		runBrowserTests
 	);
 	exports.cleanOutputDir = series(getConfig, cleanOutputDir);
